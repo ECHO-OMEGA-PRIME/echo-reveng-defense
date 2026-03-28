@@ -28,3 +28,7 @@ service = "echo-engine-runtime"
 
 [triggers]
 crons = ["0 */12 * * *"]
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "echo_metrics"
