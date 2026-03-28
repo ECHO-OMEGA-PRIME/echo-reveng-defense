@@ -1008,6 +1008,8 @@ function requireAuth(c: { req: { header: (name: string) => string | undefined };
 }
 
 // ─── Health ───
+app.get("/", (c) => c.json({ service: 'echo-reveng-defense', status: 'operational' }));
+
 app.get('/health', (c) => {
   return c.json({
     status: 'ok',
